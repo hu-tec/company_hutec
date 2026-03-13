@@ -63,7 +63,7 @@ import imgTwigfarmAgreem from "figma:asset/72d44252af9085a57ff0680663eec625d1690
 import imgPatentRelayCert from "figma:asset/a900f957b7e0ab0fa2d0bc0e5fec1833410c827b.png";
 import imgPatentOptimizedCert from "figma:asset/0d6b803d565aa1189874bfa7ecd3e76c2e6a6a9d.png";
 import imgKitelaAgreem from "figma:asset/1b5ef7fc6f4ae55fbc3633969eb99e68c5d9015b.png";
-import imgSciTechCert from "../assets/sci_tech_cert.png";
+import imgSciTechCert from "figma:asset/sci_tech_cert.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
