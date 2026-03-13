@@ -63,6 +63,7 @@ import imgTwigfarmAgreem from "figma:asset/72d44252af9085a57ff0680663eec625d1690
 import imgPatentRelayCert from "figma:asset/a900f957b7e0ab0fa2d0bc0e5fec1833410c827b.png";
 import imgPatentOptimizedCert from "figma:asset/0d6b803d565aa1189874bfa7ecd3e76c2e6a6a9d.png";
 import imgKitelaAgreem from "figma:asset/1b5ef7fc6f4ae55fbc3633969eb99e68c5d9015b.png";
+import imgSciTechCert from "../assets/과학기술부 자격증.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -107,7 +108,7 @@ const corporateCertifications = [
 const governmentApprovals = [
   { title: "과학기술정보통신부 민간자격증 승인", year: "2021", icon: Shield, image: imgCivilQualification },
   { title: "문화관광부 자격증", year: "2008", icon: Award },
-  { title: "과학기술부 자격증", year: "2021", icon: Award },
+  { title: "과학기술부 자격증", year: "2021", icon: Award, image: imgSciTechCert },
   { title: "법무부 승인", year: "2010", icon: Shield, image: imgMOJExplanation },
   { title: "연구개발전담부서 인정서", year: "2021", icon: BookOpen, image: imgResearchInstitute },
 ];
