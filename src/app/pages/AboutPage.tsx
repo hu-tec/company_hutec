@@ -19,7 +19,12 @@ import { SectionTitle } from "../components/SectionTitle";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 // Import leadership images
-import leadershipImg from "figma:asset/6615e1df39529e59df892ca03ad4e81ffbaacbdd.png";
+import leaderYoo from "figma:asset/b4cdf190ade357cbe5465c6b866fb43af568e367.png";
+import leaderPark from "figma:asset/ac7388ebaab8a7f23c6e97903c9caaa4b763a023.png";
+import leaderLee from "figma:asset/7977b67d2b319a4e44d7037cd872c37f906fb5e0.png";
+import leaderYoon from "figma:asset/1eaa93793d2e27471697c44b7b86841c701f5c23.png";
+import leaderJeong from "figma:asset/bcb2315f1131c8b83a0139342bd1a507c14c15cf.png";
+import leaderKim from "figma:asset/6615e1df39529e59df892ca03ad4e81ffbaacbdd.png";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -75,7 +80,7 @@ const leadership = [
       "(전) 중앙일보 사장",
       "(전) 조선일보 편집국장"
     ],
-    image: leadershipImg
+    image: leaderYoo
   },
   { 
     name: "Park Mi-Jin", 
@@ -90,7 +95,7 @@ const leadership = [
       "(현) 한국 번역 연구원 사무총장",
       "(전) UN 산하 UN IAEWP 교육위원"
     ],
-    image: leadershipImg
+    image: leaderPark
   },
   { 
     name: "Lee Jeong-Woo", 
@@ -104,7 +109,7 @@ const leadership = [
       "(전) 키즈헤럴드 발행인 회장",
       "(전) 현대투자신탁 대표이사"
     ],
-    image: leadershipImg
+    image: leaderLee
   },
   { 
     name: "Kim Dong-Ik", 
@@ -118,7 +123,7 @@ const leadership = [
       "(전) 국제교류협력협회 회장",
       "(전) 주미 한국정부 경제특별 선발위원장"
     ],
-    image: leadershipImg
+    image: leaderKim
   },
   { 
     name: "Yoon Tae-Hee", 
@@ -132,7 +137,7 @@ const leadership = [
       "(전) 한국 추리작가협회 고문",
       "(전) 한국 번역가 협회 부회장"
     ],
-    image: "https://images.unsplash.com/photo-1670207249070-169dea958c23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    image: leaderYoon
   },
   { 
     name: "Jeong Eui-yong", 
@@ -145,7 +150,7 @@ const leadership = [
       "(전) 주중국대사",
       "(전) 아시아태평양국장"
     ],
-    image: "https://images.unsplash.com/photo-1765570710919-74d14982fdb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    image: leaderJeong
   },
 ];
 
@@ -315,27 +320,21 @@ export function AboutPage() {
                 </div>
                 국내 교육 센터
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {[
-                  { name: "연세대학교", logo: "https://images.unsplash.com/photo-1683227235812-dbb413c77b26?auto=format&fit=crop&q=80&w=100" },
-                  { name: "동국대학교", logo: "https://images.unsplash.com/photo-1588089984110-389331d8e2ac?auto=format&fit=crop&q=80&w=100" },
-                  { name: "부산대학교", logo: "https://images.unsplash.com/photo-1739460677746-7aec1b70a3f6?auto=format&fit=crop&q=80&w=100" },
-                  { name: "한림대학교", logo: "https://images.unsplash.com/photo-1767695086479-869f10facf90?auto=format&fit=crop&q=80&w=100" },
-                  { name: "신한대학교", logo: "https://images.unsplash.com/photo-1588089984110-389331d8e2ac?auto=format&fit=crop&q=80&w=100" },
-                  { name: "경희대학교", logo: "https://images.unsplash.com/photo-1559722567-89e595b1f2e6?auto=format&fit=crop&q=80&w=100" },
-                  { name: "코리아헤럴드", logo: "https://images.unsplash.com/photo-1676899127445-b5aa21feafda?auto=format&fit=crop&q=80&w=100" },
-                  { name: "CBS", logo: "https://images.unsplash.com/photo-1731834451417-2386331d5cd0?auto=format&fit=crop&q=80&w=100" },
-                  { name: "전국 본원", logo: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=100" }
+                  { name: "연세대학교" },
+                  { name: "동국대학교" },
+                  { name: "부산대학교" },
+                  { name: "한림대학교" },
+                  { name: "신한대학교" },
+                  { name: "경희대학교" },
+                  { name: "코리아헤럴드" },
+                  { name: "CBS" },
+                  { name: "전국 본원" }
                 ].map((item) => (
-                  <div key={item.name} className="flex items-center gap-3 px-3 py-2.5 bg-muted/30 border border-muted rounded-xl group hover:border-primary/20 hover:bg-white transition-all shadow-sm">
-                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-white border border-border flex items-center justify-center p-1 shadow-sm">
-                      <ImageWithFallback 
-                        src={item.logo} 
-                        alt={item.name} 
-                        className="w-full h-full object-contain" 
-                      />
-                    </div>
-                    <span className="text-[14px] font-medium text-foreground/80 group-hover:text-primary transition-colors">{item.name}</span>
+                  <div key={item.name} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary shrink-0 transition-colors" />
+                    <span className="text-[14px] text-foreground/80 group-hover:text-primary transition-colors">{item.name}</span>
                   </div>
                 ))}
               </div>
@@ -349,7 +348,7 @@ export function AboutPage() {
                 </div>
                 국내 협약
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {[
                   "국제통번역시험위원회 발기인 총회",
                   "양해각서(MOU) 체결식",
@@ -357,15 +356,9 @@ export function AboutPage() {
                   "한림대 MOU",
                   "신한대 산학협력",
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-3 px-3 py-2.5 bg-muted/30 border border-muted rounded-xl group hover:border-emerald-200 hover:bg-white transition-all shadow-sm">
-                    <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-white border border-border flex items-center justify-center p-1 shadow-sm">
-                      <ImageWithFallback 
-                        src="https://images.unsplash.com/photo-1582213726839-ed1839828d00?auto=format&fit=crop&q=80&w=100" 
-                        alt="Logo" 
-                        className="w-full h-full object-contain" 
-                      />
-                    </div>
-                    <span className="text-[14px] font-medium text-foreground/80 group-hover:text-emerald-600 transition-colors">{item}</span>
+                  <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-400/40 group-hover:bg-emerald-500 shrink-0 transition-colors" />
+                    <span className="text-[14px] text-foreground/80 group-hover:text-emerald-600 transition-colors">{item}</span>
                   </div>
                 ))}
               </div>
@@ -379,31 +372,25 @@ export function AboutPage() {
                 </div>
                 해외 대학 / 업무 협약
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {[
-                  { name: "UBC", country: "캐나다", logo: "https://images.unsplash.com/photo-1753246786058-7baaf80c30f8?auto=format&fit=crop&q=80&w=100" },
-                  { name: "STIBC", country: "캐나다", logo: "https://images.unsplash.com/photo-1523289333742-be1143f6b566?auto=format&fit=crop&q=80&w=100" },
-                  { name: "Purdue University", country: "미국", logo: "https://images.unsplash.com/photo-1641576524902-302a3cae054e?auto=format&fit=crop&q=80&w=100" },
-                  { name: "CSULB", country: "미국", logo: "https://images.unsplash.com/photo-1582615799882-eee1b419f6ba?auto=format&fit=crop&q=80&w=100" },
-                  { name: "USM", country: "미국", logo: "https://images.unsplash.com/photo-1541339906194-e1610bd11977?auto=format&fit=crop&q=80&w=100" },
-                  { name: "IVY Tech", country: "미국", logo: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=100" },
-                  { name: "LA 한미교육원", country: "미국", logo: "https://images.unsplash.com/photo-1523240715639-99a8086f734d?auto=format&fit=crop&q=80&w=100" },
-                  { name: "미국 테솔 협회", country: "미국", logo: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=100" },
-                  { name: "콩코디아 대학", country: "미국", logo: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&q=80&w=100" },
-                  { name: "NATTI", country: "호주", logo: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&q=80&w=100" },
+                  { name: "UBC", country: "캐나다" },
+                  { name: "STIBC", country: "캐나다" },
+                  { name: "Purdue University", country: "미국" },
+                  { name: "CSULB", country: "미국" },
+                  { name: "USM", country: "미국" },
+                  { name: "IVY Tech", country: "미국" },
+                  { name: "LA 한미교육원", country: "미국" },
+                  { name: "미국 테솔 협회", country: "미국" },
+                  { name: "콩코디아 대학", country: "미국" },
+                  { name: "NATTI", country: "호주" },
                 ].map((item) => (
-                  <div key={item.name} className="flex items-center justify-between px-3 py-2.5 bg-muted/30 border border-muted rounded-xl group hover:border-blue-200 hover:bg-white transition-all shadow-sm">
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0 bg-white border border-border flex items-center justify-center p-0.5 shadow-sm">
-                        <ImageWithFallback 
-                          src={item.logo} 
-                          alt={item.name} 
-                          className="w-full h-full object-contain" 
-                        />
-                      </div>
-                      <span className="text-[14px] font-medium text-foreground/80 group-hover:text-blue-600 transition-colors">{item.name}</span>
+                  <div key={item.name} className="flex items-center justify-between px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                    <div className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400/40 group-hover:bg-blue-500 shrink-0 transition-colors" />
+                      <span className="text-[14px] text-foreground/80 group-hover:text-blue-600 transition-colors">{item.name}</span>
                     </div>
-                    <span className="text-[11px] text-muted-foreground px-2.5 py-1 bg-blue-50/50 text-blue-700 rounded-full border border-blue-100/50" style={{ fontWeight: 600 }}>
+                    <span className="text-[11px] text-muted-foreground group-hover:text-blue-600 transition-colors">
                       {item.country}
                     </span>
                   </div>
@@ -470,7 +457,7 @@ export function AboutPage() {
               >
                 <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/5 mb-6 shadow-inner shrink-0">
                   <ImageWithFallback
-                    src={person.image}
+                    src={person.name === "Park Mi-Jin" ? "figma:asset/07cc7d2d34d7ff63698bd5f1293d692efac10127.png" : person.image}
                     alt={person.name}
                     className="w-full h-full object-cover"
                   />

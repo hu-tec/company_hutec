@@ -5,10 +5,8 @@ import { AboutPage } from "./pages/AboutPage";
 import BusinessPage from "./pages/BusinessPage";
 import { EducationPage } from "./pages/EducationPage";
 import { CSRPage } from "./pages/CSRPage";
-import { PartnersPage } from "./pages/PartnersPage";
 import { PressPage } from "./pages/PressPage";
-import { CertificationsPage } from "./pages/CertificationsPage";
-import { ContactPage } from "./pages/ContactPage";
+import { PartnershipsAndCertificationsPage } from "./pages/PartnershipsAndCertificationsPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,10 +18,8 @@ export const router = createBrowserRouter([
       { path: "business", Component: BusinessPage },
       { path: "education", Component: EducationPage },
       { path: "csr", Component: CSRPage },
-      { path: "partners", Component: PartnersPage },
       { path: "press", Component: PressPage },
-      { path: "certifications", Component: CertificationsPage },
-      { path: "contact", Component: ContactPage },
+      { path: "partnerships", Component: PartnershipsAndCertificationsPage },
     ],
   },
-], { basename: "/company_hutec/" });
+], { basename: '/company_hutec/' });

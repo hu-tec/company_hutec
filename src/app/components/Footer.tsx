@@ -45,9 +45,10 @@ export function Footer() {
             <div className="space-y-2.5">
               {[
                 { label: "그룹 소개", path: "/about" },
-                { label: "교육 사업", path: "/education" },
+                { label: "AI 신사업", path: "/business" },
+                { label: "30년 정통사업", path: "/education" },
                 { label: "사회 공헌", path: "/csr" },
-                { label: "파트너십", path: "/partners" },
+                { label: "파트너십 및 인증", path: "/partnerships" },
                 { label: "언론 보도", path: "/press" },
               ].map((item) => (
                 <Link

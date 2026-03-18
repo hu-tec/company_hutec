@@ -148,7 +148,7 @@ export function HomePage() {
                 새로운 미래
               </h1>
               <p className="text-white/80 text-[17px] mb-8 max-w-lg" style={{ lineHeight: 1.8 }}>
-                [외국어 교육 그룹] 타임스미디어와 휴텍씨는 24년의 교육 노하우와 AI 기술을 융합하여 글로벌 교육의 표준을 제시합니다.
+                [외국어, AI 교육 그룹] (주) 타임스미디어와 (주) 휴텍씨는 30년 교육 노하우와 AI 기술을 융합하여 글로벌 교육의 표준을 제시합니다.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -163,7 +163,7 @@ export function HomePage() {
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-xl text-[15px] hover:bg-white/20 transition-colors border border-white/20"
                   style={{ fontWeight: 500 }}
                 >
-                  사업 소개
+                  AI 신사업
                 </Link>
               </div>
             </motion.div>
@@ -188,8 +188,8 @@ export function HomePage() {
                       <Languages className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-[13px] text-muted-foreground">지원 언어</p>
-                      <p className="text-[20px]" style={{ fontWeight: 700 }}>109개</p>
+                      <p className="text-[13px] text-muted-foreground"> since</p>
+                      <p className="text-[20px]" style={{ fontWeight: 700 }}>1999년</p>
                     </div>
                   </div>
                 </div>
@@ -199,8 +199,8 @@ export function HomePage() {
                       <Users className="w-5 h-5 text-green-600" />
                     </div>
                     <div>
-                      <p className="text-[13px] text-muted-foreground">누적 교육생</p>
-                      <p className="text-[20px]" style={{ fontWeight: 700 }}>30만+</p>
+                      <p className="text-[13px] text-muted-foreground">누적학생</p>
+                      <p className="text-[20px]" style={{ fontWeight: 700 }}>35만+</p>
                     </div>
                   </div>
                 </div>
@@ -305,9 +305,7 @@ export function HomePage() {
               <h2 className="text-3xl sm:text-4xl text-white mb-3" style={{ fontWeight: 700 }}>
                 누적 교육 인원
               </h2>
-              <p className="text-white/50 text-sm">
-                24년간 시험 진행 · 18년간 교육 진행
-              </p>
+              <p className="text-white/50 text-sm">30년 시험 진행 · 18년 교육 진행</p>
             </div>
           </FadeIn>
 
@@ -324,7 +322,7 @@ export function HomePage() {
                 <span className="text-[64px] sm:text-[80px] text-transparent bg-clip-text bg-gradient-to-r from-[#a78bfa] via-[#818cf8] to-[#60a5fa]" style={{ fontWeight: 800, lineHeight: 1 }}>
                   35만+
                 </span>
-                <span className="text-white/60 text-[15px] mt-2" style={{ fontWeight: 500 }}>총 누적 교육 인원</span>
+                <span className="text-white/60 text-[15px] mt-2" style={{ fontWeight: 500 }}>총 누적 교육, 시험, 졸업 인원</span>
               </motion.div>
             </div>
           </FadeIn>
@@ -403,14 +401,14 @@ export function HomePage() {
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl text-[15px] hover:bg-primary/90 transition-colors"
                 style={{ fontWeight: 600 }}
               >
-                서비스 살펴보기 <ArrowRight className="w-4 h-4" />
+                AI 신사업 살펴보기 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                to="/partners"
+                to="/partnerships"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white text-foreground rounded-xl text-[15px] hover:bg-white/80 transition-colors border border-border"
                 style={{ fontWeight: 500 }}
               >
-                파트너십 문의
+                파트너십 및 인증
               </Link>
             </div>
           </motion.div>

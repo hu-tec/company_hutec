@@ -6,13 +6,11 @@ import { motion, AnimatePresence } from "motion/react";
 const navItems = [
   { label: "홈", path: "/" },
   { label: "그룹 소개", path: "/about" },
-  { label: "사업 소개", path: "/business" },
-  { label: "교육 사업", path: "/education" },
+  { label: "AI 신사업", path: "/business" },
+  { label: "30년 정통사업", path: "/education" },
   { label: "사회 공헌", path: "/csr" },
-  { label: "파트너십", path: "/partners" },
-  { label: "협약 및 인증", path: "/certifications" },
+  { label: "파트너십 및 인증", path: "/partnerships" },
   { label: "언론 보도", path: "/press" },
-  { label: "문의하기", path: "/contact" },
 ];
 
 export function Header() {
