@@ -17,6 +17,12 @@ import imgEvent1 from "@/assets/press_event1.png";
 import imgEvent2 from "@/assets/press_event2.png";
 import imgEvent3 from "@/assets/press_event3.png";
 import imgEvent4 from "@/assets/press_event4.png";
+import imgPressConference from "@/assets/press_conference.png";
+import tvKbs1 from "@/assets/tv_kbs1.png";
+import tvKbs2 from "@/assets/tv_kbs2.png";
+import tvSbs from "@/assets/tv_sbs.png";
+import tvJtbc from "@/assets/tv_jtbc.png";
+import tvYonhap from "@/assets/tv_yonhap.png";
 
 export function PressPage() {
   return (
@@ -165,7 +171,7 @@ export function PressPage() {
             <h3 className="text-[20px] font-bold mb-6">기자 회견 현장</h3>
             <div className="rounded-3xl overflow-hidden border border-border bg-white hover:shadow-lg transition-shadow flex flex-col">
               <div className="w-full h-64 sm:h-80 md:h-[450px] overflow-hidden relative">
-                <img src="https://images.unsplash.com/photo-1540575339264-569259c87820?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600" alt="Press Conference" className="w-full h-full object-cover" />
+                <img src={imgPressConference} alt="Press Conference" className="w-full h-full object-cover" />
               </div>
               <div className="p-8 md:p-10 border-t border-border bg-white relative">
                 <h4 className="text-[18px] font-bold mb-4">인간 vs 인공지능 번역대결 기자회견</h4>
@@ -182,11 +188,11 @@ export function PressPage() {
             <h3 className="text-[20px] font-bold mb-6">주요 방송사 보도</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                { tag: "KBS 뉴스", title: "AI 번역기 vs 인간 번역 대결", img: "https://images.unsplash.com/photo-1495020689067-958852a7765e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { tag: "KBS 뉴스", title: "인간 vs 인공지능 번역 대결", img: "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { tag: "SBS 뉴스", title: "인간 vs 인공지능 번역대결", img: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { tag: "JTBC 뉴스", title: "번역 대결... 인간 vs 인공지능 세기의 대결", img: "https://images.unsplash.com/photo-1504711432819-51f197fa1048?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { tag: "연합뉴스TV", title: "인간이 인공지능 이겼다...번역대결서 압승", img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" }
+                { tag: "KBS 뉴스", title: "AI 번역기 vs 인간 번역 대결", img: tvKbs1 },
+                { tag: "KBS 뉴스", title: "인간 vs 인공지능 번역 대결", img: tvKbs2 },
+                { tag: "SBS 뉴스", title: "인간 vs 인공지능 번역대결", img: tvSbs },
+                { tag: "JTBC 뉴스", title: "번역 대결... 인간 vs 인공지능 세기의 대결", img: tvJtbc },
+                { tag: "연합뉴스TV", title: "인간이 인공지능 이겼다...번역대결서 압승", img: tvYonhap }
               ].map((item, idx) => (
                 <div key={idx} className="bg-white rounded-[24px] border border-border overflow-hidden group hover:shadow-lg transition-shadow flex flex-col">
                   <div className="aspect-[16/9] overflow-hidden bg-muted">
