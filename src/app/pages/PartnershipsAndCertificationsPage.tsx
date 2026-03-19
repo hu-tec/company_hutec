@@ -362,51 +362,134 @@ export function PartnershipsAndCertificationsPage() {
         </div>
       </section>
 
-      {/* 2. Overseas University (from PartnersPage) */}
+      {/* 2. Overseas University */}
       <section id="overseas-uni" className="py-20 bg-gray-50 scroll-mt-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
             badge="해외 대학 연계"
-            title="글로벌 교육 인프라"
-            subtitle="캐나다 UBC, 미국 퍼듀 대학교 등 글로벌 명문 대학과 연계한 교육 프로그램을 운영합니다."
+            title="해외 대학 교육 연계"
+            subtitle="캐나다, 미국 등 세계 주요 대학 및 교육원과 교육 연계 프로그램을 운영합니다."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="rounded-2xl overflow-hidden border border-border">
-              <img src={floridaVisit} alt="USF Visit" className="w-full h-40 object-cover" />
-              <div className="p-4 bg-white"><p className="text-[13px] font-semibold text-center">University of South Florida</p></div>
-            </div>
-            <div className="rounded-2xl overflow-hidden border border-border">
-              <img src={montclairVisit} alt="Montclair Visit" className="w-full h-40 object-cover" />
-              <div className="p-4 bg-white"><p className="text-[13px] font-semibold text-center">Montclair State University</p></div>
-            </div>
-            <div className="rounded-2xl overflow-hidden border border-border">
-              <img src={businessMeeting} alt="Meeting" className="w-full h-40 object-cover" />
-              <div className="p-4 bg-white"><p className="text-[13px] font-semibold text-center">글로벌 파트너 미팅</p></div>
-            </div>
-            <div className="rounded-2xl overflow-hidden border border-border">
-              <img src={modernBuilding} alt="Building" className="w-full h-40 object-cover" />
-              <div className="p-4 bg-white"><p className="text-[13px] font-semibold text-center">현지 교육 센터 방문</p></div>
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl overflow-hidden border border-border bg-white">
-              <img src={yonseiICS} alt="Yonsei ICS" className="w-full h-64 object-cover" />
-              <div className="p-5">
-                <p className="text-[14px] font-bold mb-2">Yonsei University & ICS School</p>
-                <p className="text-[13px] text-muted-foreground">글로벌 영어캠프 협약식. 연세대와 ICS 국제학교의 파트너십을 통한 글로벌 교육 운영.</p>
-              </div>
-            </div>
-            <div className="flex flex-col justify-center bg-white p-8 rounded-2xl border border-border shadow-sm">
-              <h3 className="text-[18px] mb-6" style={{ fontWeight: 700 }}>주요 연계 대학 및 기관</h3>
-              <div className="grid grid-cols-2 gap-4">
-                {["캐나다 UBC 교육원", "Purdue University", "IVY Tech (미국)", "LA 한미교육원", "USM 대학교", "CSULB University"].map(item => (
-                  <div key={item} className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                    <span className="text-[14px]">{item}</span>
+          
+          {/* 6 Cards Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <FadeIn delay={0.1}>
+              <div className="bg-white p-8 rounded-[32px] border border-border h-full hover:shadow-lg transition-shadow">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center">
+                    <Building2 className="w-6 h-6 text-blue-600" />
                   </div>
-                ))}
+                  <span className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[12px] font-bold">캐나다</span>
+                </div>
+                <h4 className="text-[18px] font-bold mb-3">캐나다 UBC 교육원</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">UBC Robson Square 건물에 위치한 교육원과 연계하여 글로벌 교육 프로그램을 운영합니다.</p>
               </div>
-            </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="bg-white p-8 rounded-[32px] border border-border h-full hover:shadow-lg transition-shadow">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center">
+                    <GraduationCap className="w-6 h-6 text-indigo-600" />
+                  </div>
+                  <span className="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[12px] font-bold">미국</span>
+                </div>
+                <h4 className="text-[18px] font-bold mb-3">Purdue University</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">미국 퍼듀 대학교와의 교육 파트너십을 통해 최신 교육 방법론을 도입합니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div className="bg-white p-8 rounded-[32px] border border-border h-full hover:shadow-lg transition-shadow">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center">
+                    <GraduationCap className="w-6 h-6 text-indigo-600" />
+                  </div>
+                  <span className="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-[12px] font-bold">미국</span>
+                </div>
+                <h4 className="text-[18px] font-bold mb-3">CSULB University</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">캘리포니아 주립대 롱비치와 TESOL 프로그램을 공동 운영합니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.4}>
+              <div className="bg-white p-8 rounded-[32px] border border-border h-full hover:shadow-lg transition-shadow">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center">
+                    <Globe className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <span className="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-[12px] font-bold">말레이시아</span>
+                </div>
+                <h4 className="text-[18px] font-bold mb-3">USM 대학교</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">USM 대학교와의 교류를 통해 다양한 학술 프로그램을 진행합니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.5}>
+              <div className="bg-white p-8 rounded-[32px] border border-border h-full hover:shadow-lg transition-shadow">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center">
+                    <Building2 className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <span className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[12px] font-bold">미국</span>
+                </div>
+                <h4 className="text-[18px] font-bold mb-3">IVY Tech</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">IVY Tech Community College와의 연계로 직업 교육 프로그램을 운영합니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.6}>
+              <div className="bg-white p-8 rounded-[32px] border border-border h-full hover:shadow-lg transition-shadow">
+                <div className="flex justify-between items-start mb-6">
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center">
+                    <Building2 className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <span className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-[12px] font-bold">미국</span>
+                </div>
+                <h4 className="text-[18px] font-bold mb-3">LA 한미교육원</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">Korean Education Center와의 협력으로 재미 한국인 대상 교육 프로그램을 운영합니다.</p>
+              </div>
+            </FadeIn>
+          </div>
+
+          {/* 3 Large Image Cards */}
+          <div className="grid md:grid-cols-2 gap-6">
+            <motion.div {...fadeUp} transition={{ delay: 0.1 }} className="bg-white rounded-[32px] overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <ImageWithFallback
+                  src={businessMeeting}
+                  alt="UBC Office Meeting"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-8 flex-1">
+                <h4 className="text-[18px] font-bold mb-3">UBC Office Meeting</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">UBC Robson Square에서의 사무실 미팅. 글로벌 교육 프로그램 운영을 위한 협의가 진행되었습니다.</p>
+              </div>
+            </motion.div>
+            
+            <motion.div {...fadeUp} transition={{ delay: 0.2 }} className="bg-white rounded-[32px] overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <ImageWithFallback
+                  src={floridaVisit}
+                  alt="UBC Asian Studies"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-8 flex-1">
+                <h4 className="text-[18px] font-bold mb-3">UBC Asian Studies</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">UBC의 아시아 연구 프로그램. 다양한 문화적 배경을 가진 학생들을 위한 교육 프로그램을 운영합니다.</p>
+              </div>
+            </motion.div>
+
+            <motion.div {...fadeUp} transition={{ delay: 0.3 }} className="bg-white rounded-[32px] overflow-hidden border border-border hover:shadow-lg transition-shadow flex flex-col">
+              <div className="aspect-[16/9] relative overflow-hidden">
+                <ImageWithFallback
+                  src={montclairVisit}
+                  alt="UBC Continuing Studies"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-8 flex-1">
+                <h4 className="text-[18px] font-bold mb-3">UBC Continuing Studies</h4>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">UBC의 지속적인 교육 프로그램. 다양한 분야의 전문가들을 위한 교육 코스를 제공합니다.</p>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
