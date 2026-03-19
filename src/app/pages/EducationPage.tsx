@@ -293,6 +293,57 @@ export function EducationPage() {
               />
             </div>
           </motion.div>
+
+          {/* 추가: TESOL 교육 현장 */}
+          <motion.div {...fadeUp} className="mt-12 bg-white rounded-2xl border border-border overflow-hidden shadow-sm">
+            <div className="w-full h-[300px] sm:h-[400px] overflow-hidden">
+              <ImageWithFallback
+                src={groupSeminar}
+                alt="TESOL 교육 현장"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="p-6">
+              <p className="text-[14px] text-muted-foreground" style={{ lineHeight: 1.6 }}>
+                TESOL 교육 현장 미국 캘리포니아 주립대 연계 프로그램을 통해 전문 영어 교사 양성 교육을 진행하고 있습니다.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* TESOL 대학 협약 및 졸업식 */}
+          <motion.div {...fadeUp} className="mt-12">
+            <h3 className="text-[18px] mb-6" style={{ fontWeight: 600 }}>TESOL 대학 협약 및 졸업식</h3>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+              {[
+                { img: yonseiTesolMou, title: "연세대 TESOL 교육 협약식", desc: "Yonsei University TESOL 프로그램 협약" },
+                { img: hallymCsulbMou, title: "한림대 CSULB TESOL 협약식", desc: "Hallym University with California State University" },
+                { img: tesolGraduation, title: "TESOL 졸업식", desc: "Graduate Certificate in TESOL, Pre-TESOL" }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-white rounded-2xl border border-border overflow-hidden shadow-sm">
+                  <div className="w-full h-48 overflow-hidden">
+                    <ImageWithFallback src={item.img} alt={item.title} className="w-full h-full object-cover object-center" />
+                  </div>
+                  <div className="p-5">
+                    <h4 className="text-[15px] mb-1" style={{ fontWeight: 600 }}>{item.title}</h4>
+                    <p className="text-[12px] text-muted-foreground">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-white rounded-2xl border border-border overflow-hidden shadow-sm">
+              <div className="w-full h-[250px] sm:h-[350px] overflow-hidden">
+                <ImageWithFallback src={dankookCsulbMou} alt="단국대학교 & California State University, Long Beach" className="w-full h-full object-cover object-center" />
+              </div>
+              <div className="p-6">
+                <h4 className="text-[16px] mb-2" style={{ fontWeight: 600 }}>단국대학교 & California State University, Long Beach</h4>
+                <p className="text-[13px] text-muted-foreground" style={{ lineHeight: 1.6 }}>
+                  TESOL 어학교육 협약식. 단국대학교와 캘리포니아 주립대 롱비치의 공식 파트너십을 통해 글로벌 TESOL 교육 프로그램을 진행합니다.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
