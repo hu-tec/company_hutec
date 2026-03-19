@@ -13,6 +13,11 @@ import {
 } from "lucide-react";
 import { FadeIn } from "../components/FadeIn";
 
+import imgEvent1 from "@/assets/press_event1.png";
+import imgEvent2 from "@/assets/press_event2.png";
+import imgEvent3 from "@/assets/press_event3.png";
+import imgEvent4 from "@/assets/press_event4.png";
+
 export function PressPage() {
   return (
     <div className="overflow-hidden">
@@ -138,10 +143,10 @@ export function PressPage() {
             <h3 className="text-[20px] font-bold mb-6">언론 보도 현장</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {[
-                { title: "번역 대결 행사장", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { title: "박미진 대표 발표", img: "https://images.unsplash.com/photo-1573164713988-8665fc963095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { title: "언론사 취재 현장", img: "https://images.unsplash.com/photo-1475721025505-115fba3bc13a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" },
-                { title: "기자단 촬영", img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" }
+                { title: "번역 대결 행사장", img: imgEvent1 },
+                { title: "박미진 대표 발표", img: imgEvent2 },
+                { title: "언론사 취재 현장", img: imgEvent3 },
+                { title: "기자단 촬영", img: imgEvent4 }
               ].map((item, idx) => (
                 <div key={idx} className="bg-white rounded-2xl border border-border overflow-hidden group hover:shadow-lg transition-shadow">
                   <div className="aspect-[4/3] overflow-hidden">
