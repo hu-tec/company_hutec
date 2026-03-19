@@ -9,6 +9,9 @@ import {
   Building2,
   GraduationCap,
   Sparkles,
+  Flag,
+  MapPin,
+  Link,
 } from "lucide-react";
 import { SectionTitle } from "../components/SectionTitle";
 import { FadeIn } from "../components/FadeIn";
@@ -134,6 +137,192 @@ export function CSRPage() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Domestic Education */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle
+            badge="국내 교육봉사"
+            title="국내 교육 나눔 활동"
+            subtitle="CJ 나눔교육, 전국 지역아동센터, 공부방 교육 봉사 등 다양한 교육 나눔을 실천합니다."
+          />
+          <div className="grid md:grid-cols-3 gap-8">
+            <FadeIn delay={0.1}>
+              <div className="p-10 rounded-[32px] border border-border bg-white hover:shadow-lg transition-all h-full text-center">
+                <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Heart className="w-8 h-8 text-red-500" />
+                </div>
+                <h3 className="text-[20px] mb-4" style={{ fontWeight: 700 }}>CJ 나눔교육사업</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">전국 지역아동센터와 연계하여 아이들에게 교구 나눠주기 및 영어 교육 봉사를 진행합니다. 타임스미디어는 CJ 영어 교육나눔에 적극 동참하고 있습니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="p-10 rounded-[32px] border border-border bg-white hover:shadow-lg transition-all h-full text-center">
+                <div className="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Users className="w-8 h-8 text-purple-500" />
+                </div>
+                <h3 className="text-[20px] mb-4" style={{ fontWeight: 700 }}>전국 공부방 교육</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">전국 각지의 공부방을 방문하여 소외된 아이들에게 양질의 교육 기회를 제공하고 있습니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div className="p-10 rounded-[32px] border border-border bg-white hover:shadow-lg transition-all h-full text-center">
+                <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Globe className="w-8 h-8 text-blue-500" />
+                </div>
+                <h3 className="text-[20px] mb-4" style={{ fontWeight: 700 }}>InKAS 해외 입양인 특강</h3>
+                <p className="text-[15px] text-muted-foreground leading-relaxed">해외 입양인을 대상으로 한국어 및 한국 문화 특강을 진행하여 문화적 유대감을 형성합니다.</p>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Overseas Education */}
+      <section className="py-20 bg-muted">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle
+            badge="해외 교육봉사"
+            title="해외 교육 봉사 활동"
+            subtitle="캄보디아, 네팔, 아프리카 등 교육 인프라가 부족한 지역에 교육의 불씨를 전하고 있습니다."
+          />
+          {/* 4 Small Cards */}
+          <div className="grid sm:grid-cols-2 gap-6 mb-8">
+            <FadeIn delay={0.1}>
+              <div className="bg-white p-8 rounded-[32px] border border-border flex flex-col items-start gap-4 h-full">
+                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center shrink-0">
+                  <span className="font-bold text-[18px]">KH</span>
+                </div>
+                <div>
+                  <h4 className="text-[18px] mb-2" style={{ fontWeight: 700 }}>캄보디아</h4>
+                  <p className="text-[14px] text-muted-foreground leading-relaxed">캄보디아 현지 어린이들을 대상으로 한 대규모 교육 봉사 활동을 진행합니다. 태극기와 함께 한국의 교육 정신을 전달합니다.</p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="bg-white p-8 rounded-[32px] border border-border flex flex-col items-start gap-4 h-full">
+                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center shrink-0">
+                  <span className="font-bold text-[18px]">NP</span>
+                </div>
+                <div>
+                  <h4 className="text-[18px] mb-2" style={{ fontWeight: 700 }}>네팔</h4>
+                  <p className="text-[14px] text-muted-foreground leading-relaxed">네팔 현지 학교에서 칠판 앞에서 직접 교육하는 봉사활동을 진행하며, 교육 자료와 물품을 지원합니다.</p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div className="bg-white p-8 rounded-[32px] border border-border flex flex-col items-start gap-4 h-full">
+                <div className="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center shrink-0">
+                  <Globe className="w-6 h-6 text-green-600" />
+                </div>
+                <div>
+                  <h4 className="text-[18px] mb-2" style={{ fontWeight: 700 }}>아프리카</h4>
+                  <p className="text-[14px] text-muted-foreground leading-relaxed">아프리카 현지 교실에서 아이들에게 영어 교육을 제공하고, 교육 환경 개선을 위한 지원을 합니다.</p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.4}>
+              <div className="bg-white p-8 rounded-[32px] border border-border flex flex-col items-start gap-4 h-full">
+                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center shrink-0">
+                  <Globe className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h4 className="text-[18px] mb-2" style={{ fontWeight: 700 }}>International Christian School</h4>
+                  <p className="text-[14px] text-muted-foreground leading-relaxed">ICS 국제학교와 연계하여 해외 교육 봉사 프로그램을 운영하고, 글로벌 교육 네트워크를 확장합니다.</p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+          
+          {/* 2 Large Image Cards */}
+          <div className="grid sm:grid-cols-2 gap-8">
+            <motion.div {...fadeUp} transition={{ delay: 0.5 }} className="bg-white rounded-[32px] overflow-hidden border border-border">
+              <div className="aspect-[4/3] sm:aspect-video md:aspect-[4/3]">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1529390079861-591de354faf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlZHVjYXRpb24lMjB2b2x1bnRlZXJ8ZW58MXx8fHwxNzcxMjM0NTY3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="ICS Volunteer Program"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <p className="text-[14px] text-muted-foreground leading-relaxed">
+                  <span className="font-bold text-foreground">ICS 국제학교: </span> 국제학교와 연계한 교육 봉사 프로그램을 통해 글로벌 교육의 기회를 제공합니다.
+                </p>
+              </div>
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ delay: 0.6 }} className="bg-white rounded-[32px] overflow-hidden border border-border">
+              <div className="aspect-[4/3] sm:aspect-video md:aspect-[4/3]">
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwc2Nob29sfGVufDF8fHx8MTc3MTIzNDU4OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="ICS Facility"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <p className="text-[14px] text-muted-foreground leading-relaxed">
+                  <span className="font-bold text-foreground">교육 인프라: </span> 최신 교육 시설을 갖춘 ICS 국제학교를 통해 체계적인 교육 봉사를 실천하고 있습니다.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Volunteer */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle
+            badge="자원봉사"
+            title="자원봉사 활동"
+            subtitle="APEC 홍보사절단, 국제평화마라톤대회, 강남구자원봉사센터 등 다양한 사회 공헌 활동에 참여합니다."
+          />
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <FadeIn delay={0.1}>
+              <div className="bg-muted p-8 rounded-[32px] border border-border flex flex-col items-start h-full">
+                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                  <Flag className="w-5 h-5 text-purple-600" />
+                </div>
+                <h3 className="text-[18px] mb-3" style={{ fontWeight: 700 }}>APEC 홍보사절단</h3>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">APEC 성공개최를 위한 홍보사절단 활동에 참여하여 국제 행사의 성공적인 운영에 기여했습니다. 공항 출국장에서 APEC 홍보 현수막과 함께 활동했습니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <div className="bg-muted p-8 rounded-[32px] border border-border flex flex-col items-start h-full">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                  <MapPin className="w-5 h-5 text-blue-600" />
+                </div>
+                <h3 className="text-[18px] mb-3" style={{ fontWeight: 700 }}>제12회 국제평화마라톤대회</h3>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">국제평화마라톤대회에 참가하여 평화의 메시지를 전달하고, 건강한 봉사 문화를 확산시키고 있습니다.</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <div className="bg-muted p-8 rounded-[32px] border border-border flex flex-col items-start h-full">
+                <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-6">
+                  <Link className="w-5 h-5 text-indigo-600" />
+                </div>
+                <h3 className="text-[18px] mb-3" style={{ fontWeight: 700 }}>강남구자원봉사센터</h3>
+                <p className="text-[14px] text-muted-foreground leading-relaxed">아크릴 수세미 만들기 등 지역사회 자원봉사 활동에 적극 참여하여 이웃 사랑을 실천합니다.</p>
+              </div>
+            </FadeIn>
+          </div>
+
+          {/* Large Image Card */}
+          <motion.div {...fadeUp} transition={{ delay: 0.4 }} className="bg-muted rounded-[32px] overflow-hidden border border-border">
+            <div className="aspect-[21/9] sm:aspect-[21/7]">
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXJhdGhvbnxlbnwxfHx8fDE3NzEyMzQ3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Marathon Event"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-6">
+              <p className="text-[14px] text-muted-foreground leading-relaxed">
+                <span className="font-bold text-foreground">제12회 국제평화마라톤대회: </span> 타임스 미디어 임직원들이 국제평화마라톤대회에 참가하여 평화와 나눔의 가치를 실천하고 있습니다.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
