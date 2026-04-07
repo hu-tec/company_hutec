@@ -339,7 +339,7 @@ export function AboutPage() {
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary shrink-0 transition-colors" />
-                    <span className="text-[14px] text-foreground/80 group-hover:text-primary transition-colors">{item}</span>
+                    <span className="text-[14px] font-semibold text-foreground/80 group-hover:text-primary transition-colors">{item}</span>
                   </div>
                 ))}
               </div>
@@ -365,7 +365,7 @@ export function AboutPage() {
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400/40 group-hover:bg-emerald-500 shrink-0 transition-colors" />
-                    <span className="text-[14px] text-foreground/80 group-hover:text-emerald-600 transition-colors">{item}</span>
+                    <span className="text-[14px] font-semibold text-foreground/80 group-hover:text-emerald-600 transition-colors">{item}</span>
                   </div>
                 ))}
               </div>
@@ -387,9 +387,9 @@ export function AboutPage() {
                   "캘리포니아 주립대학교-롱비치",
                   "캘리포니아 주립대학교-샌버나디노",
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                  <div key={item} className="flex items-center gap-1 px-2 py-1.5 border-b border-muted group last:border-0 transition-colors">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-400/40 group-hover:bg-blue-500 shrink-0 transition-colors" />
-                    <span className="text-[14px] text-foreground/80 group-hover:text-blue-600 transition-colors">{item}</span>
+                    <span className="text-[14px] font-semibold text-foreground/80 group-hover:text-blue-600 transition-colors">{item}</span>
                   </div>
                 ))}
               </div>
@@ -416,7 +416,7 @@ export function AboutPage() {
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
                     <div className="w-1.5 h-1.5 rounded-full bg-purple-400/40 group-hover:bg-purple-500 shrink-0 transition-colors" />
-                    <span className="text-[14px] text-foreground/80 group-hover:text-purple-600 transition-colors">{item}</span>
+                    <span className="text-[14px] font-semibold text-foreground/80 group-hover:text-purple-600 transition-colors">{item}</span>
                   </div>
                 ))}
               </div>
