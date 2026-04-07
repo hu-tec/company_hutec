@@ -317,13 +317,12 @@ export function AboutPage() {
             title="교육 네트워크 현황"
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
-            {/* Column 1: 전 대학 교육장 소개 */}
-            <motion.div {...fadeUp} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
-              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
-                  <BookOpen className="w-5 h-5 text-primary" />
+            <motion.div {...fadeUp} className="bg-white rounded-2xl p-5 lg:p-6 border border-border flex flex-col">
+              <h3 className="text-[14px] xl:text-[15px] tracking-tighter mb-5 flex items-center gap-2" style={{ fontWeight: 600 }}>
+                <div className="w-7 h-7 bg-primary/10 rounded pl-0.5 flex items-center justify-center shrink-0">
+                  <BookOpen className="w-4 h-4 text-primary" />
                 </div>
-                전 대학 교육장 소개
+                <span className="whitespace-nowrap">전 대학 교육장 소개</span>
               </h3>
               <div className="space-y-2 flex-1">
                 {[
@@ -347,12 +346,12 @@ export function AboutPage() {
             </motion.div>
 
             {/* Column 2: 언론 교육센터 및 학회 협약처 */}
-            <motion.div {...fadeUp} transition={{ delay: 0.1 }} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
-              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center shrink-0">
-                  <Award className="w-5 h-5 text-emerald-600" />
+            <motion.div {...fadeUp} transition={{ delay: 0.1 }} className="bg-white rounded-2xl p-5 lg:p-6 border border-border flex flex-col">
+              <h3 className="text-[14px] xl:text-[15px] tracking-tighter mb-5 flex items-center gap-2" style={{ fontWeight: 600 }}>
+                <div className="w-7 h-7 bg-emerald-50 rounded pl-0.5 flex items-center justify-center shrink-0">
+                  <Award className="w-4 h-4 text-emerald-600" />
                 </div>
-                언론 교육센터 및 학회 협약처
+                <span className="whitespace-nowrap">언론 교육센터 및 학회 협약처</span>
               </h3>
               <div className="space-y-2 flex-1">
                 {[
@@ -373,12 +372,12 @@ export function AboutPage() {
             </motion.div>
 
             {/* Column 3: 해외 교육 센터 및 교육 협약처 */}
-            <motion.div {...fadeUp} transition={{ delay: 0.2 }} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
-              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
-                  <Globe className="w-5 h-5 text-blue-600" />
+            <motion.div {...fadeUp} transition={{ delay: 0.2 }} className="bg-white rounded-2xl p-5 lg:p-6 border border-border flex flex-col">
+              <h3 className="text-[14px] xl:text-[15px] tracking-tighter mb-5 flex items-center gap-2" style={{ fontWeight: 600 }}>
+                <div className="w-7 h-7 bg-blue-50 rounded pl-0.5 flex items-center justify-center shrink-0">
+                  <Globe className="w-4 h-4 text-blue-600" />
                 </div>
-                해외 교육 센터 및 교육 협약처
+                <span className="whitespace-nowrap">해외 교육 센터 및 교육 협약처</span>
               </h3>
               <div className="space-y-2 flex-1">
                 {[
@@ -397,12 +396,12 @@ export function AboutPage() {
             </motion.div>
 
             {/* Column 4: 해외 제휴 협업 기관 */}
-            <motion.div {...fadeUp} transition={{ delay: 0.3 }} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
-              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center shrink-0">
-                  <Users className="w-5 h-5 text-purple-600" />
+            <motion.div {...fadeUp} transition={{ delay: 0.3 }} className="bg-white rounded-2xl p-5 lg:p-6 border border-border flex flex-col">
+              <h3 className="text-[14px] xl:text-[15px] tracking-tighter mb-5 flex items-center gap-2" style={{ fontWeight: 600 }}>
+                <div className="w-7 h-7 bg-purple-50 rounded pl-0.5 flex items-center justify-center shrink-0">
+                  <Users className="w-4 h-4 text-purple-600" />
                 </div>
-                해외 제휴 협업 기관
+                <span className="whitespace-nowrap">해외 제휴 협업 기관</span>
               </h3>
               <div className="space-y-2 mb-6 flex-1">
                 {[
@@ -420,14 +419,6 @@ export function AboutPage() {
                     <span className="text-[14px] text-foreground/80 group-hover:text-purple-600 transition-colors">{item}</span>
                   </div>
                 ))}
-              </div>
-              
-              {/* Bottom grid (dark boxes) */}
-              <div className="grid grid-cols-2 gap-2 mt-auto">
-                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">TIMES TESOL</div>
-                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">ITT 시험본부</div>
-                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">TIMES HR</div>
-                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">ICS국제학교</div>
               </div>
             </motion.div>
           </div>
