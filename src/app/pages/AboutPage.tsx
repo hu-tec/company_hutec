@@ -70,23 +70,23 @@ const keyMetrics = [
 
 const leadership = [
   {
-    name: "Yoo Myeong-u",
-    role: "이사장",
-    desc: "유명우",
+    name: "Lee Jeong-Woo",
+    role: "㈜휴텍씨 회장",
+    desc: "이정우",
     items: [
-      "(現) 국제통역 번역협회 고문",
-      "(現) 한국 번역 학회 정립회장",
-      "(現) 한국 번역 연구원 원장",
-      "(前) 한국 번역학회 창립 고문",
-      "(前) 호남대학교 영어영문학과 명예교수",
-      "(前) 한국 추리작가협회 부회장",
-      "(前) 한국 번역가 협회 부회장"
+      "(現) (주) 휴텍씨 회장",
+      "(現) KNN방송 감사",
+      "(現) 하나금융그룹 고문",
+      "(前) 코리아헤럴드 대표이사 발행인",
+      "(前) 내외경제신문 대표이사 발행인",
+      "(前) 키즈헤럴드 발행인 회장",
     ],
-    image: leaderYoo
+    image: leaderLee
   },
+
   {
     name: "Park Mi-Jin",
-    role: "사무총장",
+    role: "㈜휴텍씨 대표이사",
     desc: "박미진",
     items: [
       "(현) (주)휴텍씨 - 메타 트랜스 대표이사",
@@ -100,23 +100,38 @@ const leadership = [
     image: leaderPark
   },
   {
-    name: "Lee Jeong-Woo",
-    role: "이사",
-    desc: "이정우",
+    name: "Jeong Eui-yong",
+    role: "㈜휴텍씨 기술이사",
+    desc: "정의용",
     items: [
-      "(現) (주) 휴텍씨 회장",
-      "(現) KNN방송 감사",
-      "(現) 하나금융그룹 고문",
-      "(前) 코리아헤럴드 대표이사 발행인",
-      "(前) 내외경제신문 대표이사 발행인",
-      "(前) 키즈헤럴드 발행인 회장",
-      "(前) 현대투자신탁 대표이사"
+      "(現) (주) 휴텍씨 CTO",
+      "(現) 한국번역학회 산학협력위원",
+      "(前) (주)시스트란 대표이사",
+      "(前) (주)시스트란 인터내셔널 부사장",
+      "(前) (주)삼과솔루션 연구소장",
+      "(前) (유)위번아이티 연구소장",
+      "(前) (유)하니소프트 개발부 부장"
     ],
-    image: leaderLee
+    image: leaderJeong
   },
   {
+    name: "Yoon Tae-Hee",
+    role: "㈜휴텍씨 고문이사",
+    desc: "윤태희",
+    items: [
+      "(現) Korea Economic Intelligence New York Wall St. 회장",
+      "(前) (세계은행)국제 금융공사 수석고문",
+      "(前) 국제방송교류재단 이사장",
+      "(前) 서울외국어대학원대학교 총장",
+      "(前) 국제영어대학원 회장",
+      "(前) 주미 한국정부 장학생 선발위원장"
+    ],
+    image: leaderYoon
+  },
+
+  {
     name: "Kim Dong-Ik",
-    role: "이사",
+    role: "㈜휴텍씨 고문이사",
     desc: "김동익",
     items: [
       "(현) Korea Economic Intelligence, New York Wall St. 회장",
@@ -129,33 +144,19 @@ const leadership = [
     image: leaderKim
   },
   {
-    name: "Yoon Tae-Hee",
-    role: "고문 이사",
-    desc: "윤태희",
+    name: "Yoo Myeong-u",
+    role: "㈜휴텍씨 고문이사",
+    desc: "유명우",
     items: [
-      "(現) Korea Economic Intelligence New York Wall St. 회장",
-      "(前) (세계은행)국제 금융공사 수석고문",
-      "(前) 국제방송교류재단 이사장",
-      "(前) 서울외국어대학원대학교 총장",
-      "(前) 국제영어대학원 회장",
-      "(前) 주미 한국정부 장학생 선발위원장"
+      "(現) 국제통역 번역협회 고문",
+      "(現) 한국 번역 학회 정립회장",
+      "(現) 한국 번역 연구원 원장",
+      "(前) 한국 번역학회 창립 고문",
+      "(前) 호남대학교 영어영문학과 명예교수",
+      "(前) 한국 추리작가협회 부회장",
+      "(前) 한국 번역가 협회 부회장"
     ],
-    image: leaderYoon
-  },
-  {
-    name: "Jeong Eui-yong",
-    role: "자문 위원",
-    desc: "정의용",
-    items: [
-      "(現) (주) 휴텍씨 CTO",
-      "(現) 한국번역학회 산학협력위원",
-      "(前) (주)시스트란 대표이사",
-      "(前) (주)시스트란 인터내셔널 부사장",
-      "(前) (주)삼과솔루션 연구소장",
-      "(前) (유)위번아이티 연구소장",
-      "(前) (유)하니소프트 개발부 부장"
-    ],
-    image: leaderJeong
+    image: leaderYoo
   },
 ];
 
@@ -462,7 +463,7 @@ export function AboutPage() {
               >
                 <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/5 mb-6 shadow-inner shrink-0">
                   <ImageWithFallback
-                    src={person.name === "Park Mi-Jin" ? "figma:asset/07cc7d2d34d7ff63698bd5f1293d692efac10127.png" : person.image}
+                    src={person.image}
                     alt={person.name}
                     className="w-full h-full object-cover"
                   />
