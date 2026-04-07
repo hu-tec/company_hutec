@@ -313,54 +313,56 @@ export function AboutPage() {
       <section className="py-20 lg:py-28 bg-muted">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
-            badge="인프라"
-            title="전국 및 해외 교육 네트워크"
-            subtitle="전국 및 해외의 주요 대학 및 교육 기관과의 파트너십을 통해 탄탄한 글로벌 교육 인프라를 구축했습니다."
+            badge="ORGANIZATION & GLOBAL NETWORK"
+            title="교육 네트워크 현황"
           />
-          <div className="grid lg:grid-cols-3 gap-6">
-            {/* Column 1: 국내 교육 센터 */}
-            <motion.div {...fadeUp} className="bg-white rounded-2xl p-8 border border-border">
-              <h3 className="text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            {/* Column 1: 전 대학 교육장 소개 */}
+            <motion.div {...fadeUp} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
+              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center shrink-0">
                   <BookOpen className="w-5 h-5 text-primary" />
                 </div>
-                국내 교육 센터
+                전 대학 교육장 소개
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-2 flex-1">
                 {[
-                  { name: "연세대학교" },
-                  { name: "동국대학교" },
-                  { name: "부산대학교" },
-                  { name: "한림대학교" },
-                  { name: "신한대학교" },
-                  { name: "경희대학교" },
-                  { name: "코리아헤럴드" },
-                  { name: "CBS" },
-                  { name: "전국 본원" }
+                  "연세대학교",
+                  "한동대학교",
+                  "단국대학교",
+                  "동국대학교",
+                  "부산대학교",
+                  "영남대학교",
+                  "한림대학교",
+                  "동아대학교",
+                  "서울교육대학교",
+                  "충남대학교"
                 ].map((item) => (
-                  <div key={item.name} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                  <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary/40 group-hover:bg-primary shrink-0 transition-colors" />
-                    <span className="text-[14px] text-foreground/80 group-hover:text-primary transition-colors">{item.name}</span>
+                    <span className="text-[14px] text-foreground/80 group-hover:text-primary transition-colors">{item}</span>
                   </div>
                 ))}
               </div>
             </motion.div>
 
-            {/* Column 2: 국내 협약 */}
-            <motion.div {...fadeUp} transition={{ delay: 0.1 }} className="bg-white rounded-2xl p-8 border border-border">
-              <h3 className="text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center">
+            {/* Column 2: 언론 교육센터 및 학회 협약처 */}
+            <motion.div {...fadeUp} transition={{ delay: 0.1 }} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
+              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
+                <div className="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center shrink-0">
                   <Award className="w-5 h-5 text-emerald-600" />
                 </div>
-                국내 협약
+                언론 교육센터 및 학회 협약처
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-2 flex-1">
                 {[
-                  "국제통번역시험위원회 발기인 총회",
-                  "양해각서(MOU) 체결식",
-                  "연세대 언어교육원 협약",
-                  "한림대 MOU",
-                  "신한대 산학협력",
+                  "코리아 헤럴드 교육센터",
+                  "코리아 타임스 교육센터",
+                  "CBS교육 센터",
+                  "부산 KNN 교육센터",
+                  "중앙일보 IT 데일리 교육센터",
+                  "국제통역번역협회",
+                  "한국 번역학회",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
                     <div className="w-1.5 h-1.5 rounded-full bg-emerald-400/40 group-hover:bg-emerald-500 shrink-0 transition-colors" />
@@ -370,37 +372,62 @@ export function AboutPage() {
               </div>
             </motion.div>
 
-            {/* Column 3: 해외 대학 / 업무 협약 */}
-            <motion.div {...fadeUp} transition={{ delay: 0.2 }} className="bg-white rounded-2xl p-8 border border-border">
-              <h3 className="text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
-                <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center">
+            {/* Column 3: 해외 교육 센터 및 교육 협약처 */}
+            <motion.div {...fadeUp} transition={{ delay: 0.2 }} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
+              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
+                <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center shrink-0">
                   <Globe className="w-5 h-5 text-blue-600" />
                 </div>
-                해외 대학 / 업무 협약
+                해외 교육 센터 및 교육 협약처
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-2 flex-1">
                 {[
-                  { name: "UBC", country: "캐나다" },
-                  { name: "STIBC", country: "캐나다" },
-                  { name: "Purdue University", country: "미국" },
-                  { name: "CSULB", country: "미국" },
-                  { name: "USM", country: "미국" },
-                  { name: "IVY Tech", country: "미국" },
-                  { name: "LA 한미교육원", country: "미국" },
-                  { name: "미국 테솔 협회", country: "미국" },
-                  { name: "콩코디아 대학", country: "미국" },
-                  { name: "NATTI", country: "호주" },
+                  "캐나다 교육 센터",
+                  "중국 교육센터",
+                  "미국 교육센터",
+                  "캘리포니아 주립대학교-롱비치",
+                  "캘리포니아 주립대학교-샌버나디노",
                 ].map((item) => (
-                  <div key={item.name} className="flex items-center justify-between px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
-                    <div className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400/40 group-hover:bg-blue-500 shrink-0 transition-colors" />
-                      <span className="text-[14px] text-foreground/80 group-hover:text-blue-600 transition-colors">{item.name}</span>
-                    </div>
-                    <span className="text-[11px] text-muted-foreground group-hover:text-blue-600 transition-colors">
-                      {item.country}
-                    </span>
+                  <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400/40 group-hover:bg-blue-500 shrink-0 transition-colors" />
+                    <span className="text-[14px] text-foreground/80 group-hover:text-blue-600 transition-colors">{item}</span>
                   </div>
                 ))}
+              </div>
+            </motion.div>
+
+            {/* Column 4: 해외 제휴 협업 기관 */}
+            <motion.div {...fadeUp} transition={{ delay: 0.3 }} className="bg-white rounded-2xl p-6 lg:p-8 border border-border flex flex-col">
+              <h3 className="text-[16px] lg:text-[18px] mb-6 flex items-center gap-3" style={{ fontWeight: 600 }}>
+                <div className="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center shrink-0">
+                  <Users className="w-5 h-5 text-purple-600" />
+                </div>
+                해외 제휴 협업 기관
+              </h3>
+              <div className="space-y-2 mb-6 flex-1">
+                {[
+                  "UBC",
+                  "STIBC",
+                  "Purdue University",
+                  "CSULB",
+                  "USM",
+                  "IVY TECH",
+                  "호주 NATTI",
+                  "미국 콩코디아 대학교",
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-2 px-3 py-1.5 border-b border-muted group last:border-0 transition-colors">
+                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400/40 group-hover:bg-purple-500 shrink-0 transition-colors" />
+                    <span className="text-[14px] text-foreground/80 group-hover:text-purple-600 transition-colors">{item}</span>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Bottom grid (dark boxes) */}
+              <div className="grid grid-cols-2 gap-2 mt-auto">
+                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">TIMES TESOL</div>
+                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">ITT 시험본부</div>
+                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">TIMES HR</div>
+                <div className="bg-[#1a1a2e] text-white text-[11px] font-bold py-2.5 px-1 text-center rounded hover:bg-[#2d1b69] transition-colors cursor-default">ICS국제학교</div>
               </div>
             </motion.div>
           </div>
