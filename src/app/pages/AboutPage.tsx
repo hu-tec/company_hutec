@@ -69,22 +69,24 @@ const keyMetrics = [
 ];
 
 const leadership = [
-  { 
-    name: "Yoo Myeong-u", 
-    role: "이사장", 
+  {
+    name: "Yoo Myeong-u",
+    role: "이사장",
     desc: "유명우",
     items: [
-      "(現) ICS 이사장",
-      "(前) 성균관대학교 언론정보대학원 겸임교수",
-      "(前) 정무부 장관",
-      "(前) 중앙일보 사장",
-      "(前) 조선일보 편집국장"
+      "(現) 국제통역 번역협회 고문",
+      "(現) 한국 번역 학회 정립회장",
+      "(現) 한국 번역 연구원 원장",
+      "(前) 한국 번역학회 창립 고문",
+      "(前) 호남대학교 영어영문학과 명예교수",
+      "(前) 한국 추리작가협회 부회장",
+      "(前) 한국 번역가 협회 부회장"
     ],
     image: leaderYoo
   },
-  { 
-    name: "Park Mi-Jin", 
-    role: "사무총장", 
+  {
+    name: "Park Mi-Jin",
+    role: "사무총장",
     desc: "박미진",
     items: [
       "(현) (주)휴텍씨 - 메타 트랜스 대표이사",
@@ -97,9 +99,9 @@ const leadership = [
     ],
     image: leaderPark
   },
-  { 
-    name: "Lee Jeong-Woo", 
-    role: "이사", 
+  {
+    name: "Lee Jeong-Woo",
+    role: "이사",
     desc: "이정우",
     items: [
       "(現) (주) 휴텍씨 회장",
@@ -112,9 +114,9 @@ const leadership = [
     ],
     image: leaderLee
   },
-  { 
-    name: "Kim Dong-Ik", 
-    role: "이사", 
+  {
+    name: "Kim Dong-Ik",
+    role: "이사",
     desc: "김동익",
     items: [
       "(현) Korea Economic Intelligence, New York Wall St. 회장",
@@ -126,9 +128,9 @@ const leadership = [
     ],
     image: leaderKim
   },
-  { 
-    name: "Yoon Tae-Hee", 
-    role: "고문 이사", 
+  {
+    name: "Yoon Tae-Hee",
+    role: "고문 이사",
     desc: "윤태희",
     items: [
       "(現) Korea Economic Intelligence New York Wall St. 회장",
@@ -140,9 +142,9 @@ const leadership = [
     ],
     image: leaderYoon
   },
-  { 
-    name: "Jeong Eui-yong", 
-    role: "자문 위원", 
+  {
+    name: "Jeong Eui-yong",
+    role: "자문 위원",
     desc: "정의용",
     items: [
       "(現) (주) 휴텍씨 CTO",
@@ -426,8 +428,8 @@ export function AboutPage() {
                 className="bg-white rounded-2xl overflow-hidden border border-border hover:shadow-lg transition-shadow"
               >
                 <div className="w-full h-56 overflow-hidden">
-                  <ImageWithFallback 
-                    src={book.image} 
+                  <ImageWithFallback
+                    src={book.image}
                     alt={book.title}
                     className="w-full h-full object-cover"
                   />
