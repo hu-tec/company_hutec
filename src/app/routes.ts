@@ -22,4 +22,4 @@ export const router = createBrowserRouter([
       { path: "partnerships", Component: PartnershipsAndCertificationsPage },
     ],
   },
-], { basename: '/company_hutec/' });
+]);
