@@ -19,12 +19,12 @@ import { SectionTitle } from "../components/SectionTitle";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 // Import leadership images
-import leaderYoo from "figma:asset/b4cdf190ade357cbe5465c6b866fb43af568e367.png";
-import leaderPark from "figma:asset/ac7388ebaab8a7f23c6e97903c9caaa4b763a023.png";
-import leaderLee from "figma:asset/7977b67d2b319a4e44d7037cd872c37f906fb5e0.png";
-import leaderYoon from "figma:asset/1eaa93793d2e27471697c44b7b86841c701f5c23.png";
-import leaderJeong from "figma:asset/bcb2315f1131c8b83a0139342bd1a507c14c15cf.png";
-import leaderKim from "figma:asset/6615e1df39529e59df892ca03ad4e81ffbaacbdd.png";
+const leaderYoo = `${import.meta.env.BASE_URL}assets/img/img_leader_yoo.png`;
+const leaderPark = `${import.meta.env.BASE_URL}assets/img/img_leader_park.png`;
+const leaderLee = `${import.meta.env.BASE_URL}assets/img/img_leader_lee.png`;
+const leaderYoon = `${import.meta.env.BASE_URL}assets/img/img_leader_yoon.png`;
+const leaderJeong = `${import.meta.env.BASE_URL}assets/img/img_leader_jeong.png`;
+const leaderKim = `${import.meta.env.BASE_URL}assets/img/img_leader_kim.png`;
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },

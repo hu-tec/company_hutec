@@ -13,16 +13,16 @@ import {
 } from "lucide-react";
 import { FadeIn } from "../components/FadeIn";
 
-import imgEvent1 from "@/assets/press_event1.png";
-import imgEvent2 from "@/assets/press_event2.png";
-import imgEvent3 from "@/assets/press_event3.png";
-import imgEvent4 from "@/assets/press_event4.png";
-import imgPressConference from "@/assets/press_conference.png";
-import tvKbs1 from "@/assets/tv_kbs1.png";
-import tvKbs2 from "@/assets/tv_kbs2.png";
-import tvSbs from "@/assets/tv_sbs.png";
-import tvJtbc from "@/assets/tv_jtbc.png";
-import tvYonhap from "@/assets/tv_yonhap.png";
+const imgEvent1 = `${import.meta.env.BASE_URL}assets/img/img_press_event1.png`;
+const imgEvent2 = `${import.meta.env.BASE_URL}assets/img/img_press_event2.png`;
+const imgEvent3 = `${import.meta.env.BASE_URL}assets/img/img_press_event3.png`;
+const imgEvent4 = `${import.meta.env.BASE_URL}assets/img/img_press_event4.png`;
+const imgPressConference = `${import.meta.env.BASE_URL}assets/img/img_press_conference.png`;
+const tvKbs1 = `${import.meta.env.BASE_URL}assets/img/img_tv_kbs1.png`;
+const tvKbs2 = `${import.meta.env.BASE_URL}assets/img/img_tv_kbs2.png`;
+const tvSbs = `${import.meta.env.BASE_URL}assets/img/img_tv_sbs.png`;
+const tvJtbc = `${import.meta.env.BASE_URL}assets/img/img_tv_jtbc.png`;
+const tvYonhap = `${import.meta.env.BASE_URL}assets/img/img_tv_yonhap.png`;
 
 export function PressPage() {
   return (

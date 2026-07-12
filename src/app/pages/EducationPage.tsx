@@ -22,16 +22,16 @@ import { FadeIn } from "../components/FadeIn";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 // Import real event images
-import seminarRoom from "figma:asset/7717fc5df9e00360533a21fe35c3538e929d5e04.png";
-import conferenceEvent from "figma:asset/213abecac011c9a9622bddd86089f95390d1a7d7.png";
-import californiaAgreement from "figma:asset/2e65bf8ad923ff330ca7beff29c1c205ae1124d9.png";
-import groupSeminar from "figma:asset/aa857c2d23ee0b6d99759b2a262dd0c2c109a034.png";
+const seminarRoom = `${import.meta.env.BASE_URL}assets/img/img_seminar_room.png`;
+const conferenceEvent = `${import.meta.env.BASE_URL}assets/img/img_conference_event.png`;
+const californiaAgreement = `${import.meta.env.BASE_URL}assets/img/img_california_agreement.png`;
+const groupSeminar = `${import.meta.env.BASE_URL}assets/img/img_group_seminar.png`;
 
 // Import TESOL partnership images
-import tesolGraduation from "figma:asset/b50f7e0999b07d772a252dcc13fc3792cb1511e3.png";
-import yonseiTesolMou from "figma:asset/2c895ebd2ffdbd6741b648f76a255263777f8956.png";
-import hallymCsulbMou from "figma:asset/9f13ea926c561a31ca11d36d431ac373d5c69693.png";
-import dankookCsulbMou from "figma:asset/dbdd65adc2cd76e865f71f92c424c0bbf16672a8.png";
+const tesolGraduation = `${import.meta.env.BASE_URL}assets/img/img_tesol_graduation.png`;
+const yonseiTesolMou = `${import.meta.env.BASE_URL}assets/img/img_yonsei_tesol_mou.png`;
+const hallymCsulbMou = `${import.meta.env.BASE_URL}assets/img/img_hallym_csulb_mou.png`;
+const dankookCsulbMou = `${import.meta.env.BASE_URL}assets/img/img_dankook_csulb_mou.png`;
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },

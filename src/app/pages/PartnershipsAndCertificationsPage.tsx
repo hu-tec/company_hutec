@@ -22,56 +22,56 @@ import { FadeIn } from "../components/FadeIn";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 // Real document images (from CertificationsPage)
-import imgCivilQualification from "figma:asset/633d5d434ea6e6fca69eca484434aa27ad4f2b5b.png";
-import imgWomenEnterprise from "figma:asset/c47fb3ee056c64daa65a7d2e3c0632335a74f5b9.png";
-import imgExportCert from "figma:asset/06c174071f251358c3eaf356c40043dc650416a3.png";
-import imgStartupCert from "figma:asset/b1d358d6781a572cb3fc9ee8869d3096b725bdda.png";
-import imgResearchInstitute from "figma:asset/ef6dd4e63014318b4426dae31a7da7c25671e017.png";
+const imgCivilQualification = `${import.meta.env.BASE_URL}assets/img/img_civil_qualification_cert.png`;
+const imgWomenEnterprise = `${import.meta.env.BASE_URL}assets/img/img_women_enterprise_cert.png`;
+const imgExportCert = `${import.meta.env.BASE_URL}assets/img/img_export_cert.png`;
+const imgStartupCert = `${import.meta.env.BASE_URL}assets/img/img_startup_cert.png`;
+const imgResearchInstitute = `${import.meta.env.BASE_URL}assets/img/img_research_institute_cert.png`;
 
 // First batch of 10 agreement images
-import imgJuilletMOU from "figma:asset/077b48673c977569619911b08e0c9c152c4af280.png";
-import imgJuilletHandwritten from "figma:asset/a490847678318edb19ea57142835738d43612e43.png";
-import imgAgreemAITranslation from "figma:asset/4850bae1305885afb3e5fe0a89ac6bcf69c655a8.png";
-import imgAgreemHumanEditing from "figma:asset/632b32d4c56afea021e8e464ef157a20259d2c2f.png";
-import imgShinhanUnivMOU from "figma:asset/158f439f38074ec6c636d16327502bc5c50d9b40.png";
-import imgYonseiUnivMOU from "figma:asset/f924f835a12e1715aedfaf1d9cbd3fe20ceb81c2.png";
-import imgBabeCosmeticsMOU from "figma:asset/fa9464a2ba454b5d9454292d03a1db47810a4a40.png";
-import imgIAEEduNetMOU from "figma:asset/44146a0bced6d0625b6611cb069fb0441598ce11.png";
-import imgWiseSTGlobalMOU from "figma:asset/fbbfc907842ec804aa5f08d7d54dee92a3fad1a9.png";
+const imgJuilletMOU = `${import.meta.env.BASE_URL}assets/img/img_juillet_mou.png`;
+const imgJuilletHandwritten = `${import.meta.env.BASE_URL}assets/img/img_juillet_handwritten.png`;
+const imgAgreemAITranslation = `${import.meta.env.BASE_URL}assets/img/img_agreem_ai_translation.png`;
+const imgAgreemHumanEditing = `${import.meta.env.BASE_URL}assets/img/img_agreem_human_editing.png`;
+const imgShinhanUnivMOU = `${import.meta.env.BASE_URL}assets/img/img_shinhan_univ_mou.png`;
+const imgYonseiUnivMOU = `${import.meta.env.BASE_URL}assets/img/img_yonsei_univ_mou.png`;
+const imgBabeCosmeticsMOU = `${import.meta.env.BASE_URL}assets/img/img_babe_cosmetics_mou.png`;
+const imgIAEEduNetMOU = `${import.meta.env.BASE_URL}assets/img/img_iae_edunet_mou.png`;
+const imgWiseSTGlobalMOU = `${import.meta.env.BASE_URL}assets/img/img_wise_st_global_mou.png`;
 
 // Second batch
-import imgAgreemHumanEditingExam from "figma:asset/514b292089faf966fb87b51e727259259e069b27.png";
-import imgMOJExplanation from "figma:asset/40955f27c15b920af34ad89dec4860f8d5abb627.png";
-import imgExportJuliet from "figma:asset/59aa02f184df058439cc714510a656ac21937c0b.png";
-import imgExportIAE from "figma:asset/06c174071f251358c3eaf356c40043dc650416a3.png";
-import imgKuktongSystranAgreem from "figma:asset/5a5e68f97f5382dcb1ed19b8e97aede220d36905.png";
-import imgHutechcSystranAgreem from "figma:asset/15e458a84b9177b7069c25bd588db38f0061a10f.png";
-import imgXYCBAgreem from "figma:asset/a3ae32e5eff5250c2fd0250b0f47843b5ece569e.png";
-import imgWomenFriendlyAgreem from "figma:asset/f8362560f211f1a8748122720439b6118adbdc23.png";
-import imgWomenEnterpriseCert from "figma:asset/c47fb3ee056c64daa65a7d2e3c0632335a74f5b9.png";
-import imgVentureCertReal from "figma:asset/4cf259b1b2d49b92078fcfec5b8534f2ff1cb066.png";
+const imgAgreemHumanEditingExam = `${import.meta.env.BASE_URL}assets/img/img_agreem_human_editing_exam.png`;
+const imgMOJExplanation = `${import.meta.env.BASE_URL}assets/img/img_moj_explanation.png`;
+const imgExportJuliet = `${import.meta.env.BASE_URL}assets/img/img_export_juillet.png`;
+const imgExportIAE = `${import.meta.env.BASE_URL}assets/img/img_export_cert.png`;
+const imgKuktongSystranAgreem = `${import.meta.env.BASE_URL}assets/img/img_kuktong_systran_agreem.png`;
+const imgHutechcSystranAgreem = `${import.meta.env.BASE_URL}assets/img/img_hutechc_systran_agreem.png`;
+const imgXYCBAgreem = `${import.meta.env.BASE_URL}assets/img/img_xycb_agreem.png`;
+const imgWomenFriendlyAgreem = `${import.meta.env.BASE_URL}assets/img/img_women_friendly_agreem.png`;
+const imgWomenEnterpriseCert = `${import.meta.env.BASE_URL}assets/img/img_women_enterprise_cert.png`;
+const imgVentureCertReal = `${import.meta.env.BASE_URL}assets/img/img_venture_cert.png`;
 
 // Third batch
-import imgISCommAgreem from "figma:asset/fb17610f9e3ba5cedabe59bb56e2a9932b6f0152.png";
-import imgSMBizCert from "figma:asset/a658bb2ed6919f0fdb4c9c7a1a30a6d44aa875c4.png";
-import imgTwigfarmAgreem from "figma:asset/72d44252af9085a57ff0680663eec625d16909b9.png";
+const imgISCommAgreem = `${import.meta.env.BASE_URL}assets/img/img_iscomm_agreem.png`;
+const imgSMBizCert = `${import.meta.env.BASE_URL}assets/img/img_smbiz_cert.png`;
+const imgTwigfarmAgreem = `${import.meta.env.BASE_URL}assets/img/img_twigfarm_agreem.png`;
 
 // Fourth batch
-import imgPatentRelayCert from "figma:asset/a900f957b7e0ab0fa2d0bc0e5fec1833410c827b.png";
-import imgPatentOptimizedCert from "figma:asset/0d6b803d565aa1189874bfa7ecd3e76c2e6a6a9d.png";
-import imgKitelaAgreem from "figma:asset/1b5ef7fc6f4ae55fbc3633969eb99e68c5d9015b.png";
-import imgPatentInterpretationCert from "figma:asset/eff7d9f934a0f6b716644f6d085e8ca6b06be206.png";
-import imgPatentTranslationCert from "figma:asset/a1d6d7ad8553917472401c0f23584e571a7b44be.png";
+const imgPatentRelayCert = `${import.meta.env.BASE_URL}assets/img/img_patent_relay_cert.png`;
+const imgPatentOptimizedCert = `${import.meta.env.BASE_URL}assets/img/img_patent_optimized_cert.png`;
+const imgKitelaAgreem = `${import.meta.env.BASE_URL}assets/img/img_kitela_agreem.png`;
+const imgPatentInterpretationCert = `${import.meta.env.BASE_URL}assets/img/img_patent_interpretation_cert.png`;
+const imgPatentTranslationCert = `${import.meta.env.BASE_URL}assets/img/img_patent_translation_cert.png`;
 
 // Partnerships images
-import ittMou1 from "figma:asset/b1b0a869ab05825812326f44301e800f5dad91c6.png";
-import ittMou2 from "figma:asset/a67c8d9d080dc37bf6dc25d4421af91af2131101.png";
-import ittGroup from "figma:asset/7b3951fefa7f9a66d7ed2fdfe3867cdc1505cd62.png";
-import yonseiICS from "figma:asset/2081838724bc1dfa788192cd63b2e74319574e58.png";
-import floridaVisit from "figma:asset/eb7f325c42c6e39957505ae2b1a8b318e8db6a6a.png";
-import montclairVisit from "figma:asset/29ff7e3b39375a4b97a9eb2bf7c234cc245032f5.png";
-import businessMeeting from "figma:asset/36d9a81c4ff3e8a49038d5f695dc4fbc63373209.png";
-import modernBuilding from "figma:asset/2ffe39ec10ba57977c9aa1b94cc07edbfb8ffe34.png";
+const ittMou1 = `${import.meta.env.BASE_URL}assets/img/img_itt_mou1.png`;
+const ittMou2 = `${import.meta.env.BASE_URL}assets/img/img_itt_mou2.png`;
+const ittGroup = `${import.meta.env.BASE_URL}assets/img/img_itt_group.png`;
+const yonseiICS = `${import.meta.env.BASE_URL}assets/img/img_yonsei_ics.png`;
+const floridaVisit = `${import.meta.env.BASE_URL}assets/img/img_florida_visit.png`;
+const montclairVisit = `${import.meta.env.BASE_URL}assets/img/img_montclair_visit.png`;
+const businessMeeting = `${import.meta.env.BASE_URL}assets/img/img_business_meeting.png`;
+const modernBuilding = `${import.meta.env.BASE_URL}assets/img/img_modern_building.png`;
 
 // Placeholder images
 const imgCultureCert = "https://images.unsplash.com/photo-1646769762753-565020b3bb2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGNlcnRpZmljYXRlJTIwZG9jdW1lbnQlMjBnb2xkJTIwc2VhbHxlbnwxfHx8fDE3NzMyMDIzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";

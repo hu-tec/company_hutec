@@ -26,11 +26,11 @@ import { SectionTitle } from "../components/SectionTitle";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 // Import ITT exam images
-import ittExamRoom from "figma:asset/ed406ea70074b935d3e7a951b189cc4c23cd3a3e.png";
-import ittMou1 from "figma:asset/b1b0a869ab05825812326f44301e800f5dad91c6.png";
-import ittMou2 from "figma:asset/a67c8d9d080dc37bf6dc25d4421af91af2131101.png";
-import ittConference from "figma:asset/4494b5c7d68ea0fbe9a7ec7ec0da91fd3d5e5435.png";
-import ittGroup from "figma:asset/7b3951fefa7f9a66d7ed2fdfe3867cdc1505cd62.png";
+const ittExamRoom = `${import.meta.env.BASE_URL}assets/img/img_itt_exam_room.png`;
+const ittMou1 = `${import.meta.env.BASE_URL}assets/img/img_itt_mou1.png`;
+const ittMou2 = `${import.meta.env.BASE_URL}assets/img/img_itt_mou2.png`;
+const ittConference = `${import.meta.env.BASE_URL}assets/img/img_itt_conference.png`;
+const ittGroup = `${import.meta.env.BASE_URL}assets/img/img_itt_group.png`;
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
